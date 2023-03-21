@@ -1,9 +1,9 @@
 {
-    "name": "com.joyastick.ConversationMatrixTool",
+    "name": "com.joyastick.conversationmatrixtool",
     "version": "0.0.1-preview.1",
     "displayName": "XPVR - ConversationMatrixTool",
     "description": "This is a Package that is XPVR implementation of the ConversationMatrixTool",
-    "unty": "2021.3",
+    "unty": "2020.3",
     "author": {
         "name": "Mu XPVR"
     }
