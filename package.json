@@ -4,9 +4,6 @@
     "displayName": "XPVR - ConversationMatrixTool",
     "description": "This is the package of the Conversation Matrix Tool",
     "unty": "2020.3",
-    "dependencies": {
-        "com.unity.textmeshpro":"3.0.6"
-    },
     "author": {
         "name": "XPVR"
     }
