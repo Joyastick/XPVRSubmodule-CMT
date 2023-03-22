@@ -1,6 +1,6 @@
 {
     "name": "com.joyastick.conversationmatrixtool",
-    "version": "2.1.1-alpha",
+    "version": "2.1.2-alpha",
     "displayName": "XPVR - ConversationMatrixTool",
     "description": "This is the package of the Conversation Matrix Tool with Sequence Addon",
     "unty": "2020.3",
