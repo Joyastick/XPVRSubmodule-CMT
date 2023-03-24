@@ -1,14 +1,17 @@
 using UnityEngine;
 using UnityEngine.Playables;
 
-public class SubtitleContainer : PlayableAsset
+namespace ConversationMatrixTool
 {
-    public string text;
-    public override Playable CreatePlayable(PlayableGraph graph, GameObject owner)
+    public class SubtitleContainer : PlayableAsset
     {
-        var playable = ScriptPlayable<SubtitleBehaviour>.Create(graph);
-        SubtitleBehaviour subtitleBehaviour = playable.GetBehaviour();
-        subtitleBehaviour.text = text;
-        return playable;
+        [TextArea(6, 20)] public string text;
+        public override Playable CreatePlayable(PlayableGraph graph, GameObject owner)
+        {
+            var playable = ScriptPlayable<SubtitleBehaviour>.Create(graph);
+            SubtitleBehaviour subtitleBehaviour = playable.GetBehaviour();
+            subtitleBehaviour.text = text;
+            return playable;
+        }
     }
 }

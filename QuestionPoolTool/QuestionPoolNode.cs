@@ -6,7 +6,7 @@ using XNodeEditor;
 namespace ConversationMatrixTool
 {
     [CreateNodeMenuAttribute("Conversation Matrix Tool/Dialogue/QuestionPool")]
-    [NodeTintAttribute("#726A95")]
+    //[NodeTintAttribute("#726A95")]
     [NodeWidthAttribute(666)]
     public class QuestionPoolNode : BaseNode
     {

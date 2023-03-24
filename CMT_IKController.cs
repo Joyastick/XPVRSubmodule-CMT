@@ -62,9 +62,11 @@ namespace ConversationMatrixTool
 
         private void Awake()
         {
-            var _player = FindObjectOfType<ConversationMatrixGraphPlayer>();
+            /*
+             var _player = FindObjectOfType<ConversationMatrixGraphPlayer>();
             if(_player)//check if null
             _player.StartConversation(0);
+            */
         }
 
         void Start()

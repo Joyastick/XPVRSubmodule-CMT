@@ -110,6 +110,7 @@ namespace ConversationMatrixTool
         }
         
         #endregion
+
     }
 
     #region CLASSES_STRUCTS
@@ -138,7 +139,8 @@ namespace ConversationMatrixTool
         Entry,
         Exit,
         LookAt,
-        QuestionPool
+        QuestionPool,
+        Sequence
     }
     
     [Serializable]

@@ -7,13 +7,16 @@
         "GUID:002c1bbed08fa44d282ef34fd5edb138",
         "GUID:69ab3f10cf42d0b42a6cd1353c374377",
         "GUID:48c9f6afdac61634db0e0f241c7d4d51",
-        "GUID:59324d3de2f561241851761697ccb618"
+        "GUID:f06555f75b070af458a003d92f9efb00",
+        "GUID:02f771204943f4a40949438e873e3eff"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "SpeechBlend.dll"
+    ],
     "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [],
