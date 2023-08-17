@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEditor;
-using UnityEngine;
-using XNode;
 
 namespace ConversationMatrixTool
 {
@@ -20,3 +17,4 @@ namespace ConversationMatrixTool
         }
     }
 }
+#endif

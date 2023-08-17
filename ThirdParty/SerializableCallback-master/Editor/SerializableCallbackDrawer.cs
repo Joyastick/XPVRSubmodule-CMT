@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -325,3 +326,4 @@ public class SerializableCallbackDrawer : PropertyDrawer {
 		return result;
 	}
 }
+#endif

@@ -9,7 +9,9 @@ using UnityEngine.Events;
 using UnityEngine.Playables;
 using UnityEngine.UI;
 using XNode;
+#if UNITY_EDITOR
 using XNodeEditor;
+#endif
 using Debug = UnityEngine.Debug;
 using Random = UnityEngine.Random;
 

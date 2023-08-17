@@ -1,7 +1,9 @@
 using System;
 using UnityEngine;
 using XNode;
+#if UNITY_EDITOR
 using XNodeEditor;
+#endif
 
 namespace ConversationMatrixTool
 {
@@ -30,8 +32,10 @@ namespace ConversationMatrixTool
                 var baseNode = (BaseNode)node;
                 if (baseNode.type == NodeType.Start)
                 {
+#if UNITY_EDITOR
                     NodeEditorWindow.current.zoom = 1f;
                     NodeEditorWindow.current.panOffset = baseNode.position;
+#endif
                 }
             }
         }
@@ -43,8 +47,10 @@ namespace ConversationMatrixTool
                 var baseNode = (BaseNode)node;
                 if (baseNode.type == NodeType.End)
                 {
+#if UNITY_EDITOR
                     NodeEditorWindow.current.zoom = 1f;
                     NodeEditorWindow.current.panOffset = baseNode.position;
+#endif
                 }
             }
         }

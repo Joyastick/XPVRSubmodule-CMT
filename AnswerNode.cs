@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using XNode;
-using XNodeEditor;
 
 namespace ConversationMatrixTool
 {
@@ -18,9 +17,9 @@ namespace ConversationMatrixTool
         [Tooltip("Answers will be displayed in random order each time this node is loaded, if this is set to true.")]
         public bool randomize;
 
-        [Output(dynamicPortList = true, backingValue = Node.ShowBackingValue.Never,
-            typeConstraint = Node.TypeConstraint.None,
-            connectionType = Node.ConnectionType.Override)]
+        [Output(dynamicPortList = true, backingValue = ShowBackingValue.Never,
+            typeConstraint = TypeConstraint.None,
+            connectionType = ConnectionType.Override)]
         public List<Answer> output = new List<Answer>();
 
         private int givenAnswer;

@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEngine;
 using XNodeEditor;
 namespace ConversationMatrixTool.Editor
@@ -19,3 +20,4 @@ namespace ConversationMatrixTool.Editor
         }
     }
 }
+#endif

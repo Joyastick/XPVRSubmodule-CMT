@@ -1,6 +1,8 @@
 using System.IO;
 using MyBox;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
@@ -51,7 +53,7 @@ public class SequenceGO : MonoBehaviour
         string directoryPath = "Assets/Sequences/" + UID + "/";
         if (!Directory.Exists(directoryPath))
             Directory.CreateDirectory(directoryPath);
-
+#if UNITY_EDITOR
         string _name = AssetDatabase.GenerateUniqueAssetPath(directoryPath + title + "_sequence.asset");
         AssetDatabase.CreateAsset(sequence, _name);
         AssetDatabase.SaveAssets();
@@ -60,8 +62,8 @@ public class SequenceGO : MonoBehaviour
         var playable = ScriptableObject.CreateInstance<TimelineAsset>();
         AssetDatabase.CreateAsset(playable, _name);
         AssetDatabase.SaveAssets();
-
         director = gameObject.AddComponent<PlayableDirector>();
         director.playableAsset = playable;
+#endif
     }
 }
