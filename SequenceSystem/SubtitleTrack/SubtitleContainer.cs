@@ -1,3 +1,4 @@
+/*
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -14,4 +15,9 @@ namespace ConversationMatrixTool
             return playable;
         }
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+*/
+>>>>>>> Stashed changes

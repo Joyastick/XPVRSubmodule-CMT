@@ -1,7 +1,9 @@
+#if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
 using XNode;
 using XNodeEditor;
+
 
 namespace ConversationMatrixTool.Editor
 {
@@ -23,3 +25,4 @@ namespace ConversationMatrixTool.Editor
         }
     }
 }
+#endif

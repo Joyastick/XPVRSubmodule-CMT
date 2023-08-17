@@ -1,3 +1,7 @@
+<<<<<<< Updated upstream
+=======
+/*
+>>>>>>> Stashed changes
 using UnityEngine.Timeline;
 
 namespace ConversationMatrixTool
@@ -7,4 +11,9 @@ namespace ConversationMatrixTool
     public class SubtitleTrack : TrackAsset
     {
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+*/
+>>>>>>> Stashed changes

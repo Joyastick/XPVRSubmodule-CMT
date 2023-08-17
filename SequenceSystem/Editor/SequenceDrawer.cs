@@ -1,3 +1,7 @@
+<<<<<<< Updated upstream
+=======
+/*
+>>>>>>> Stashed changes
 using UnityEditor;
 using UnityEngine;
 
@@ -36,11 +40,19 @@ namespace ConversationMatrixTool
                     if (sequenceInfo != null)
                     {
                         GUIContent content = new GUIContent(sequenceInfo.name);
+<<<<<<< Updated upstream
                         /* string[] nameParts = sequenceInfo.name.Split(' ');
                         if (nameParts.Length > 1)
                             content.text = nameParts[0] + "/" + sequenceInfo.name.Substring(nameParts[0].Length + 1);*/
                         content.text = sequenceInfo.title;
                         menu.AddItem(content, sequenceInfo == currentSequenceInfo, () => SelectMatInfo(property, sequenceInfo));
+=======
+                        // string[] nameParts = sequenceInfo.name.Split(' ');
+                        // if (nameParts.Length > 1)
+                        //    content.text = nameParts[0] + "/" + sequenceInfo.name.Substring(nameParts[0].Length + 1);
+                        // content.text = sequenceInfo.title;
+                        // menu.AddItem(content, sequenceInfo == currentSequenceInfo, () => SelectMatInfo(property, sequenceInfo));
+>>>>>>> Stashed changes
                     }
                 }
 
@@ -65,4 +77,9 @@ namespace ConversationMatrixTool
             property.serializedObject.Update();
         }
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+    */
+>>>>>>> Stashed changes

@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using MyBox;
 using UnityEngine;
 using XNodeEditor;
@@ -54,3 +55,4 @@ namespace ConversationMatrixTool
         }
     }
 }
+#endif

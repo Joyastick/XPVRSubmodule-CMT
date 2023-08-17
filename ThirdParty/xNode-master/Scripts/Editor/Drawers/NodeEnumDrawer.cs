@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using XNode;
+#if UNITY_EDITOR
 using XNodeEditor;
+#endif
 
 namespace XNodeEditor {
 	[CustomPropertyDrawer(typeof(NodeEnumAttribute))]

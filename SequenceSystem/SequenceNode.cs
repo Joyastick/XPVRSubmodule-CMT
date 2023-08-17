@@ -1,3 +1,7 @@
+<<<<<<< Updated upstream
+=======
+/*
+>>>>>>> Stashed changes
 using System.Collections;
 using System.Collections.Generic;
 using MyBox;
@@ -43,4 +47,9 @@ namespace ConversationMatrixTool
             ((ConversationMatrixGraph)graph).AssignNode(this);
         }
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+*/
+>>>>>>> Stashed changes
