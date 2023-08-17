@@ -1,4 +1,3 @@
-#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 using ReadyPlayerMe;
@@ -156,4 +155,3 @@ public class ImportToolWindow : EditorWindow
         return "Assets/Resources/Avatars/" + url.Substring(38);
     }
 }
-#endif

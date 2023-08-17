@@ -1,9 +1,7 @@
 using System;
 using UnityEngine;
 using XNode;
-#if UNITY_EDITOR
 using XNodeEditor;
-#endif
 
 namespace ConversationMatrixTool
 {
@@ -32,10 +30,8 @@ namespace ConversationMatrixTool
                 var baseNode = (BaseNode)node;
                 if (baseNode.type == NodeType.Start)
                 {
-#if UNITY_EDITOR
                     NodeEditorWindow.current.zoom = 1f;
                     NodeEditorWindow.current.panOffset = baseNode.position;
-#endif                    
                 }
             }
         }
@@ -47,10 +43,8 @@ namespace ConversationMatrixTool
                 var baseNode = (BaseNode)node;
                 if (baseNode.type == NodeType.End)
                 {
-#if UNITY_EDITOR
                     NodeEditorWindow.current.zoom = 1f;
                     NodeEditorWindow.current.panOffset = baseNode.position;
-#endif
                 }
             }
         }
@@ -114,13 +108,13 @@ namespace ConversationMatrixTool
         {
             player.IntegerAnimation(id, intValue, exitTime);
         }
-
+        
         #endregion
 
     }
 
     #region CLASSES_STRUCTS
-
+    
     [Serializable]
     public class Connection
     {
@@ -148,11 +142,14 @@ namespace ConversationMatrixTool
         QuestionPool,
         Sequence
     }
-
+    
     [Serializable]
     public class Condition : SerializableCallback<bool>
     {
     }
-
+    
     #endregion
 }
+
+
+

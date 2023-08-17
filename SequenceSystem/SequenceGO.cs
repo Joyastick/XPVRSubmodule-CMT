@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-=======
-/*
->>>>>>> Stashed changes
 using System.IO;
 using MyBox;
 using UnityEditor;
@@ -68,9 +64,4 @@ public class SequenceGO : MonoBehaviour
         director = gameObject.AddComponent<PlayableDirector>();
         director.playableAsset = playable;
     }
-<<<<<<< Updated upstream
 }
-=======
-}
-*/
->>>>>>> Stashed changes

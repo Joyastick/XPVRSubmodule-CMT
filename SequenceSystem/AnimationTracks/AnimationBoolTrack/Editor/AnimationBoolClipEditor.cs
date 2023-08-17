@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-=======
-#if UNITY_EDITOR
->>>>>>> Stashed changes
 using UnityEditor.Timeline;
 using UnityEngine.Timeline;
 
@@ -21,7 +17,3 @@ namespace ConversationMatrixTool
         }
     }
 }
-<<<<<<< Updated upstream
-=======
-#endif
->>>>>>> Stashed changes

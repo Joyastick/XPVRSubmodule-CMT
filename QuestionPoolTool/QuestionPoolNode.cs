@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
 using MyBox;
 using XNode;
-#if UNITY_EDITOR
 using XNodeEditor;
-#endif
 
 namespace ConversationMatrixTool
 {
@@ -51,9 +49,8 @@ namespace ConversationMatrixTool
                 output.Clear();
 
             ClearDynamicPorts();
-#if UNITY_EDITOR
             NodeEditorGUILayout.ClearReorderableListCache();
-#endif
+
             if (pool != null && !pool.questions.IsNullOrEmpty())
             {
                 var len = pool.questions.Count;
@@ -62,10 +59,8 @@ namespace ConversationMatrixTool
             }
 
             UpdatePorts();
-#if UNITY_EDITOR
             if (NodeEditorWindow.current)
                 NodeEditorWindow.current.Repaint();
-#endif
         }
 
         public override void NextNode()

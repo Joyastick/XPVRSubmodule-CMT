@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-=======
-/*
->>>>>>> Stashed changes
 using ConversationMatrixTool;
 using TMPro;
 using UnityEngine;
@@ -32,17 +28,9 @@ namespace ConversationMatrixTool
             weight = Mathf.Clamp(weight, 0f, 1f);
             textBox.color = new Color(textBox.color.r, textBox.color.g, textBox.color.b, weight);
             if (playable.GetTime() >= playable.GetDuration()) textBox.SetText("");
-<<<<<<< Updated upstream
             /*
              Debug.Log("Playable local time: " + playable.GetTime() + " / " + playable.GetDuration() + " | Weight: " + weight + " | t: " + t);
              */
         }
     }
 }
-=======
-             //Debug.Log("Playable local time: " + playable.GetTime() + " / " + playable.GetDuration() + " | Weight: " + weight + " | t: " + t);
-        }
-    }
-}
-*/
->>>>>>> Stashed changes

@@ -9,9 +9,7 @@ using UnityEngine.Events;
 using UnityEngine.Playables;
 using UnityEngine.UI;
 using XNode;
-#if UNITY_EDITOR
 using XNodeEditor;
-#endif
 using Debug = UnityEngine.Debug;
 using Random = UnityEngine.Random;
 
@@ -370,18 +368,14 @@ namespace ConversationMatrixTool
                     ProcessQuestionPoolData();
                     break;
                 case NodeType.Sequence:
-<<<<<<< Updated upstream
                     ProcessSequenceData();
-=======
-                    //ProcessSequenceData();
->>>>>>> Stashed changes
                     break;
                 default:
                     Debug.Log("Processing Default Node Action for " + currentNode.type);
                     break;
             }
         }
-/*
+
         private void ProcessSequenceData()
         {
             var node = currentNode as SequenceNode;
@@ -407,45 +401,13 @@ namespace ConversationMatrixTool
             }
         }
 
-<<<<<<< Updated upstream
-        private void ProcessSequenceData()
-        {
-            var node = currentNode as SequenceNode;
-            if (node.sequence == null) return;
-            var _UID = node.sequence.UID;
-            var sequences = FindObjectsOfType<SequenceGO>();
-            foreach (var sqnc in sequences)
-            {
-                if (sqnc.UID == _UID)
-                {
-                    sequenceDirector = sqnc.GetComponent<PlayableDirector>();
-                    if (!sequenceDirector)
-                    {
-                        Debug.LogError("No director found on the sequence game object!");
-                        return;
-                    }
-                    statementPanel.SetActive(true);
-                    answerPanel.SetActive(false);
-                    statement.SetText("");
-                    sequenceDirector.stopped += SequenceEnd;    
-                    sequenceDirector.Play();
-                }
-            }
-        }
-
-=======
->>>>>>> Stashed changes
         public void SequenceEnd(PlayableDirector playableDirector)
         {
             if (playableDirector != sequenceDirector) return;
             sequenceDirector.stopped -= SequenceEnd;
             currentNode.NextNode();
         }
-<<<<<<< Updated upstream
 
-=======
-*/
->>>>>>> Stashed changes
         //method to process question pool nodes. Displays questions in the pool.
         private void ProcessQuestionPoolData()
         {
@@ -454,7 +416,7 @@ namespace ConversationMatrixTool
             var q = node?.output;
             GetQPD().DisplayQuestions(q);
         }
-        
+
         //this method processes different types of lookat information.
         private void ProcessLookAtData()
         {

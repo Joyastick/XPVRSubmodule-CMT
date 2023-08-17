@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-=======
-/*
->>>>>>> Stashed changes
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -23,9 +19,4 @@ namespace ConversationMatrixTool
             node.title = node.sequence.title;
         }
     }
-<<<<<<< Updated upstream
 }
-=======
-}
-*/
->>>>>>> Stashed changes
