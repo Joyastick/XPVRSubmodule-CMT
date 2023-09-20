@@ -15,7 +15,7 @@ public class ImportToolWindow : EditorWindow
 
     public CharData[] characters;
     public WindowData windowData;
-    private string dataPath = "Assets/ConversationMatrixTool/CharacterImportTool/Data.asset";
+    private string dataPath = "Assets/Data.asset";
     private bool running;
     private string currentAvatarName;
     AvatarLoader avatarLoader;
@@ -24,6 +24,7 @@ public class ImportToolWindow : EditorWindow
 
     private void Awake()
     {
+        //Debug.Log(dataPath);
         //Create the scriptable object if it does not exist
         if (!EditorGUIUtility.Load(dataPath))
             AssetDatabase.CreateAsset(CreateInstance<WindowData>(), dataPath);
@@ -67,9 +68,6 @@ public class ImportToolWindow : EditorWindow
         SerializedObject so = new SerializedObject(this);
         SerializedProperty stringsProperty = so.FindProperty("characters");
         EditorGUILayout.PropertyField(stringsProperty, true); // True means show children
-        so.ApplyModifiedProperties(); // Remember to apply modified properties
-
-        
         //Import Characters Button if there is something in the array
         if (GUILayout.Button("Import Characters"))
         {
@@ -97,6 +95,8 @@ public class ImportToolWindow : EditorWindow
                 progress,
                 "Characters Loaded (" + index + "/" + characters.Length + ")");
         }
+
+        so.ApplyModifiedProperties(); // Remember to apply modified properties
     }
 
     private void AvatarLoaderOnOnCompleted(object sender, CompletionEventArgs e)
