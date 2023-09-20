@@ -10,7 +10,7 @@ namespace ConversationMatrixTool
     [Serializable]
     public abstract class BaseNode : Node
     {
-        [ReadOnly] public NodeType type;
+        public NodeType type;
 
         [Tooltip("This is the unique identifier of the node")]
         public string UID;

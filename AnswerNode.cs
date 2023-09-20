@@ -26,6 +26,8 @@ namespace ConversationMatrixTool
 
         private void Reset()
         {
+            name = "Question - Answer";
+            type = NodeType.Answer;
             CheckPreviousNode();
         }
 
