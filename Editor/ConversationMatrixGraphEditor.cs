@@ -10,14 +10,14 @@ namespace ConversationMatrixTool.Editor
     public class ConversationMatrixGraphEditor : NodeGraphEditor
     {
         private ConversationMatrixGraph graph;
-        private bool _autoSave;
-        private Node start, end;
-        private float targetX;
+        //private bool _autoSave;
+        //private Node start, end;
+        //private float targetX;
 
         public override void OnGUI()
         {
             if (graph == null) graph = (ConversationMatrixGraph)target;
-
+/*
             if (start == null)
                 foreach (var node in graph.nodes)
                     if (((BaseNode)node).type == NodeType.Start)
@@ -27,7 +27,7 @@ namespace ConversationMatrixTool.Editor
                 foreach (var node in graph.nodes)
                     if (((BaseNode)node).type == NodeType.End)
                         end = node;
-
+*/
             EditorGUILayout.BeginHorizontal();
             if (GUILayout.Button("SAVE", GUILayout.Width(80f)))
             {
@@ -40,7 +40,7 @@ namespace ConversationMatrixTool.Editor
                 NodeEditorWindow.current.SaveChanges();
                 NodeEditorWindow.current.Home();
             }
-
+/*
             if (GUILayout.Button("|<<", GUILayout.Width(80f)))
                 graph.GoToStart();
 
@@ -59,6 +59,7 @@ namespace ConversationMatrixTool.Editor
 
             EditorGUILayout.Separator();
             //GUILayout.Box("Pan Offset: " + NodeEditorWindow.current.panOffset + " | Zoom: " + NodeEditorWindow.current.zoom);
+*/
             EditorGUILayout.EndHorizontal();
         }
     }
